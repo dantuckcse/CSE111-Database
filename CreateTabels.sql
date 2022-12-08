@@ -122,7 +122,7 @@ INSERT INTO Game VALUES(30, 0, 24, 3, "Pokemon White2", 60, 40, "RolePlaying", 2
 INSERT INTO Game VALUES(31, 0, 25, 3, "Pokemon X", 60, 41, "RolePlaying", 2013);
 INSERT INTO Game VALUES(32, 0, 25, 3, "Pokemon Y", 60, 41, "RolePlaying", 2013);
 INSERT INTO Game VALUES(33, 0, 26, 3, "Pokemon Sun", 55, 38, "RolePlaying", 2016);
-INSERT INTO Game VALUES(34, 0, 26, 3, "Pokemon Moon", 55, 38, "RolePlaying", 2016)
+INSERT INTO Game VALUES(34, 0, 26, 3, "Pokemon Moon", 55, 38, "RolePlaying", 2016);
 INSERT INTO Game VALUES(35, 0, 17, 3, "Pokemon Sword", 60, 44, "RolePlaying", 2019);
 INSERT INTO Game VALUES(36, 0, 17, 3, "Pokemon Shield", 60, 44, "RolePlaying", 2019);
 INSERT INTO Game VALUES(37, 0, 11, 19, "Final Fantasy", 189, 17, "RolePlaying", 1987);
