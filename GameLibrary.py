@@ -4,32 +4,22 @@ from sqlite3 import Error
 
 
 def openConnection(_dbFile):
-    print("++++++++++++++++++++++++++++++++++")
-    print("Open database: ", _dbFile)
 
     conn = None
     try:
         conn = sqlite3.connect(_dbFile)
-        print("success")
     except Error as e:
         print(e)
-
-    print("++++++++++++++++++++++++++++++++++")
 
     return conn
 
 
 def closeConnection(_conn, _dbFile):
-    print("++++++++++++++++++++++++++++++++++")
-    print("Close database: ", _dbFile)
 
     try:
         _conn.close()
-        print("success")
     except Error as e:
         print(e)
-
-    print("++++++++++++++++++++++++++++++++++")
 
 
 def modification(_conn, _items, _setMod):
@@ -152,7 +142,7 @@ def deletion(_conn, _items):
         tableName = "Publisher"
 
     elif _items[0] == "4":
-        table = ["g_id", "r_id", "pl_id", "disest_date", "g_name", "g_price", "g_length", "g_genre", "g_releasedate"]
+        table = ["g_id", "r_id", "pl_id", "d_id", "g_name", "g_price", "g_length", "g_genre", "g_releasedate"]
         isNumber = [True, True, True, True, False, True, True, False, True]
         tableName = "Game"
 
@@ -408,6 +398,7 @@ def searching(_conn, _game, _price, _rate, _genre, _dev, _pub, _plat, _year):
         cur = _conn.cursor()
         cur.execute(sql)
 
+        print("\n")
         l = '{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}'.format("Game", " | ", "Price", " | ", "Rating", " | ", "Genre", " | ", "Developer", " | ", "Publisher", " | ", "Platform", " | ", "Release Year")
         print(l)
 
